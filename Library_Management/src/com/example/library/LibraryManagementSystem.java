@@ -69,11 +69,11 @@ class Library {
         for (Book book : books) {
             if (book.getId() == id && book.isAvailable()) {
                 book.setAvailable(false);
-                System.out.println("Book checked out successfully.");
+                System.out.println("Book checked out successfully. ");
                 return;
             }
         }
-        System.out.println("Book not available for checkout.");
+        System.out.println("Book not available for checkout. ");
     }
 
     public void returnBook(int id) {
