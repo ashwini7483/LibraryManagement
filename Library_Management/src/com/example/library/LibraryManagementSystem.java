@@ -57,12 +57,12 @@ class Library {
     public void searchBook(String title) {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title)) {
-                System.out.println("Book found:");
+                System.out.println("Book found: ");
                 System.out.println(book);
                 return;
             }
         }
-        System.out.println("Book not found.");
+        System.out.println("Book not found. ");
     }
 
     public void checkoutBook(int id) {
@@ -80,11 +80,11 @@ class Library {
         for (Book book : books) {
             if (book.getId() == id && !book.isAvailable()) {
                 book.setAvailable(true);
-                System.out.println("Book returned successfully.");
+                System.out.println("Book returned successfully. ");
                 return;
             }
         }
-        System.out.println("Invalid book ID or book already available.");
+        System.out.println("Invalid book ID or book already available. ");
     }
 }
 
